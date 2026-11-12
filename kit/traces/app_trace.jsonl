@@ -1,0 +1,4 @@
+{"attrs": {"error": "tool_outage", "outcome": "human_review", "status": "degraded", "user": "support_agent"}, "end_ms": 0.10099999963131268, "name": "agent.run", "parent_id": null, "span_id": "span-0", "start_ms": 0.0320999988616677, "trace_id": "f267d0c9d346472aaf152c9740d11f97"}
+{"attrs": {}, "end_ms": 0.08259999958681874, "name": "auth.check", "parent_id": "span-0", "span_id": "span-1", "start_ms": 0.06810000013501849, "trace_id": "f267d0c9d346472aaf152c9740d11f97"}
+{"attrs": {}, "end_ms": 0.09229999886883888, "name": "tool.fail", "parent_id": "span-0", "span_id": "span-2", "start_ms": 0.08439999874099158, "trace_id": "f267d0c9d346472aaf152c9740d11f97"}
+{"attrs": {}, "end_ms": 0.1004999994620448, "name": "handoff", "parent_id": "span-0", "span_id": "span-3", "start_ms": 0.09309999950346537, "trace_id": "f267d0c9d346472aaf152c9740d11f97"}

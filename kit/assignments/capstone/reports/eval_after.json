@@ -1,0 +1,59 @@
+{
+  "n": 2,
+  "metrics": {
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevance": 0.447213595499958,
+    "tool_call_accuracy": 0.5
+  },
+  "latency_ms": {
+    "p50": 80.0,
+    "p95": 149.99999999999997
+  },
+  "tokens": {
+    "in": 660,
+    "out": 300
+  },
+  "sim_cost_usd": 0.0096,
+  "per_sample": [
+    {
+      "id": "q1",
+      "question": "What are the branch opening hours?",
+      "latency_ms": 80.0,
+      "answer": "The branch is open Monday to Friday from 9 AM to 5 PM and the service desk handles policy questions.",
+      "retrieved_ids": [
+        "FAQ-001",
+        "FAQ-002"
+      ],
+      "tool_calls": [
+        {
+          "name": "search_policy",
+          "args": {
+            "query": "What are the branch opening hours?"
+          }
+        }
+      ],
+      "tokens_in": 320,
+      "tokens_out": 140
+    },
+    {
+      "id": "q2",
+      "question": "What is the international wire fee?",
+      "latency_ms": 149.99999999999997,
+      "answer": "The outgoing international wire fee is $40 per wire under the active Meridian fee schedule.",
+      "retrieved_ids": [
+        "FEES-001",
+        "FEES-002"
+      ],
+      "tool_calls": [
+        {
+          "name": "calculate_fee",
+          "args": {}
+        }
+      ],
+      "tokens_in": 340,
+      "tokens_out": 160
+    }
+  ]
+}

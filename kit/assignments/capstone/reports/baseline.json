@@ -1,0 +1,57 @@
+{
+  "n": 2,
+  "metrics": {
+    "context_precision": 1.0,
+    "context_recall": 1.0,
+    "faithfulness": 1.0,
+    "answer_relevance": 0.3732050807568877,
+    "tool_call_accuracy": 0.5
+  },
+  "latency_ms": {
+    "p50": 0.0,
+    "p95": 0.0
+  },
+  "tokens": {
+    "in": 450,
+    "out": 210
+  },
+  "sim_cost_usd": 0.006600000000000001,
+  "per_sample": [
+    {
+      "id": "q1",
+      "question": "What are the branch opening hours?",
+      "latency_ms": 0.0,
+      "answer": "The branch is open Monday to Friday from 9 AM to 5 PM.",
+      "retrieved_ids": [
+        "FAQ-001"
+      ],
+      "tool_calls": [
+        {
+          "name": "search_policy",
+          "args": {
+            "query": "What are the branch opening hours?"
+          }
+        }
+      ],
+      "tokens_in": 200,
+      "tokens_out": 100
+    },
+    {
+      "id": "q2",
+      "question": "What is the international wire fee?",
+      "latency_ms": 0.0,
+      "answer": "The fee is $40 per wire.",
+      "retrieved_ids": [
+        "FEES-001"
+      ],
+      "tool_calls": [
+        {
+          "name": "calculate_fee",
+          "args": {}
+        }
+      ],
+      "tokens_in": 250,
+      "tokens_out": 110
+    }
+  ]
+}
